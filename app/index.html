@@ -194,6 +194,7 @@
 			output.setFontSize(12);
 			output.setTheme('ace/theme/' + theme);
 			output.session.setMode('ace/mode/html');
+			output.setReadOnly(true);
 
 			var content = localStorage.getItem('content');
 			if (!content)
