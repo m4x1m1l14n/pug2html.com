@@ -56,102 +56,124 @@
 </head>
 
 <body>
-	<div class="d-flex flex-column h-100">
-		<div>
-			<nav class="navbar navbar-expand-sm">
-				<a class="navbar-brand" href="https://pug2html.com">
-					<img src="images/pug_logo.svg" height="32" class="d-inline-block align-top" alt="">
-					#{Pug2HTML}
-				</a>
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse"
-					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="https://pugjs.org/" target="_blank">PUG official</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								GitHub
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="https://github.com/m4x1m1l14n" target="_blank">Author</a>
-								<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com"
-									target="_blank">Project</a>
-								<!-- <div class="dropdown-divider"></div> -->
-								<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com/issues"
-									target="_blank">Issues</a>
-							</div>
-						</li>
-					</ul>
-
-					<form action="https://www.paypal.com/donate" method="post" target="_top" class="form-inline">
-						<input type="hidden" name="cmd" value="_donations" />
-						<input type="hidden" name="business" value="WZ5UGW93SUEA8" />
-						<input type="hidden" name="currency_code" value="EUR" />
-						<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0"
-							name="submit" title="PayPal - The safer, easier way to pay online!"
-							alt="Donate with PayPal button" />
-						<img alt="" border="0" src="https://www.paypal.com/en_SK/i/scr/pixel.gif" width="1"
-							height="1" />
-					</form>
-				</div>
-			</nav>
-
+	<div style="height: 95%;">
+		<div class="d-flex flex-column h-100">
 			<div>
-				<p class="pb-1 px-1">
-					If you found this page helpful, I'll be happy if you contribute to the operation of the hosting and
-					domain via paypal donation. Thank you very much! &#128522;
-				</p>
+				<nav class="navbar navbar-expand-sm">
+					<a class="navbar-brand" href="https://pug2html.com">
+						<img src="images/pug_logo.svg" height="32" class="d-inline-block align-top" alt="">
+						#{Pug2HTML}
+					</a>
+
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="https://pugjs.org/" target="_blank">PUG official</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									GitHub
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="https://github.com/m4x1m1l14n"
+										target="_blank">Author</a>
+									<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com"
+										target="_blank">Project</a>
+									<!-- <div class="dropdown-divider"></div> -->
+									<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com/issues"
+										target="_blank">Issues</a>
+								</div>
+							</li>
+						</ul>
+
+						<form action="https://www.paypal.com/donate" method="post" target="_top" class="form-inline">
+							<input type="hidden" name="cmd" value="_donations" />
+							<input type="hidden" name="business" value="WZ5UGW93SUEA8" />
+							<input type="hidden" name="currency_code" value="EUR" />
+							<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+								border="0" name="submit" title="PayPal - The safer, easier way to pay online!"
+								alt="Donate with PayPal button" />
+							<img alt="" border="0" src="https://www.paypal.com/en_SK/i/scr/pixel.gif" width="1"
+								height="1" />
+						</form>
+					</div>
+				</nav>
+
+				<div>
+					<p class="pb-1 px-1">
+						If you found this page helpful, I'll be happy if you contribute to the operation of the hosting
+						and
+						domain via paypal donation. Thank you very much! &#128522;
+					</p>
+				</div>
+			</div>
+
+			<div class="flex-grow-1">
+				<div class="row h-100 no-gutters">
+					<div class="col-md h-100 d-flex flex-column px-1 pb-2">
+						<div>
+							<ul class="nav nav-tabs">
+								<li class="nav-item">
+									<a class="nav-link active">PUG</a>
+								</li>
+							</ul>
+						</div>
+
+						<div id="editor-input" class="flex-grow-1"></div>
+					</div>
+
+					<div class="col-md h-100 d-flex flex-column px-1 pb-2">
+						<div>
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab"
+										aria-controls="html" aria-selected="true">HTML</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview" role="tab"
+										aria-controls="preview" aria-selected="false">Preview</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="flex-grow-1 tab-content" id="myTabContent">
+							<div class="tab-pane fade h-100 show active" id="html" role="tabpanel"
+								aria-labelledby="html-tab">
+								<div id="editor-output" class="h-100"></div>
+							</div>
+							<div class="tab-pane fade h-100" id="preview" role="tabpanel" aria-labelledby="preview-tab">
+								<iframe id="frame" class="w-100 h-100" frameBorder="0" style="background-color: white;">
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+	</div>
 
-		<div class="flex-grow-1">
-			<div class="row h-100 no-gutters">
-				<div class="col-md h-100 d-flex flex-column px-1 pb-2">
-					<div>
-						<ul class="nav nav-tabs">
-							<li class="nav-item">
-								<a class="nav-link active">PUG</a>
-							</li>
-						</ul>
-					</div>
+	<div class="px-1 pb-3">
+		<div>
+			<h3>Motivation</h3>
+			<p>
+				Project I'm workig on for a few years used custom e-mail template implementation till now (you know, e-mail
+				templates written in HTML code with embedded CSS, loading to project as string and replacing placeholders
+				with RegEx etc) and I decided to use something widely used and simple so I ended up with pugjs. Found lot of
+				online tools for realtime "rendering" pug into HTML, but each was missing direct preview of generated HTML
+				code. That was motivation for me to create simple to use realtime pug to HTML converter with built-in
+				preview of generated HTML code.
+			</p>
+		</div>
 
-					<div id="editor-input" class="flex-grow-1"></div>
-				</div>
-
-				<div class="col-md h-100 d-flex flex-column px-1 pb-2">
-					<div>
-						<ul class="nav nav-tabs" id="myTab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab"
-									aria-controls="html" aria-selected="true">HTML</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview" role="tab"
-									aria-controls="preview" aria-selected="false">Preview</a>
-							</li>
-						</ul>
-					</div>
-
-					<div class="flex-grow-1 tab-content" id="myTabContent">
-						<div class="tab-pane fade h-100 show active" id="html" role="tabpanel"
-							aria-labelledby="html-tab">
-							<div id="editor-output" class="h-100"></div>
-						</div>
-						<div class="tab-pane fade h-100" id="preview" role="tabpanel" aria-labelledby="preview-tab">
-							<iframe id="frame" class="w-100 h-100" frameBorder="0" style="background-color: white;">
-							</iframe>
-						</div>
-					</div>
-				</div>
-			</div>
+		<div class="text-center">
+			<small class="text-muted">Created by <a href="https://github.com/m4x1m1l14n">m4x1m1l14n</a></small>
 		</div>
 	</div>
 
