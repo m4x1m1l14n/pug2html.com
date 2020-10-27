@@ -37,7 +37,7 @@
 			if (f.fbq) return; n = f.fbq = function ()
 			{
 				n.callMethod ?
-				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
 			};
 			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
 			n.queue = []; t = b.createElement(e); t.async = !0;
@@ -73,10 +73,21 @@
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav mr-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="https://pugjs.org/" target="_blank">About PUG?</a>
+							<a class="nav-link" href="https://pugjs.org/" target="_blank">PUG official</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="https://github.com/m4x1m1l14n" target="_blank">GitHub</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								GitHub
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="https://github.com/m4x1m1l14n" target="_blank">Author</a>
+								<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com"
+									target="_blank">Project</a>
+								<!-- <div class="dropdown-divider"></div> -->
+								<a class="dropdown-item" href="https://github.com/m4x1m1l14n/pug2html.com/issues"
+									target="_blank">Issues</a>
+							</div>
 						</li>
 					</ul>
 
@@ -93,9 +104,11 @@
 				</div>
 			</nav>
 
-			<div class="pb-1 px-1">
-				If you found this page helpful, I'll be happy if you contribute to the operation of the hosting and
-				domain via paypal donation. Thank you!
+			<div>
+				<p class="pb-1 px-1">
+					If you found this page helpful, I'll be happy if you contribute to the operation of the hosting and
+					domain via paypal donation. Thank you very much! &#128522;
+				</p>
 			</div>
 		</div>
 
@@ -117,24 +130,24 @@
 					<div>
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
 							<li class="nav-item">
-								<a class="nav-link active" id="preview-tab" data-toggle="tab" href="#preview" role="tab"
-									aria-controls="preview" aria-selected="false">Preview</a>
+								<a class="nav-link active" id="html-tab" data-toggle="tab" href="#html" role="tab"
+									aria-controls="html" aria-selected="true">HTML</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab"
-									aria-controls="html" aria-selected="true">HTML</a>
+								<a class="nav-link" id="preview-tab" data-toggle="tab" href="#preview" role="tab"
+									aria-controls="preview" aria-selected="false">Preview</a>
 							</li>
 						</ul>
 					</div>
 
 					<div class="flex-grow-1 tab-content" id="myTabContent">
-						<div class="tab-pane fade h-100 show active" id="preview" role="tabpanel"
-							aria-labelledby="preview-tab">
+						<div class="tab-pane fade h-100 show active" id="html" role="tabpanel"
+							aria-labelledby="html-tab">
+							<div id="editor-output" class="h-100"></div>
+						</div>
+						<div class="tab-pane fade h-100" id="preview" role="tabpanel" aria-labelledby="preview-tab">
 							<iframe id="frame" class="w-100 h-100" frameBorder="0" style="background-color: white;">
 							</iframe>
-						</div>
-						<div class="tab-pane fade h-100" id="html" role="tabpanel" aria-labelledby="html-tab">
-							<div id="editor-output" class="h-100"></div>
 						</div>
 					</div>
 				</div>
